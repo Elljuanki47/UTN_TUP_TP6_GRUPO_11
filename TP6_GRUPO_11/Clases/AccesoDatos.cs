@@ -9,7 +9,7 @@ namespace TP6_GRUPO_11.Clases
 {
     public class AccesoDatos
     {
-        private string cadenaConexion = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+        private string cadenaConexion = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=Neptuno;Integrated Security=True";
 
         public SqlConnection ObtenerConexion()
         {
