@@ -77,7 +77,6 @@
   <ItemGroup>
     <Compile Include="Clases\AccesoDatos.cs" />
     <Compile Include="Clases\GestionProductos.cs" />
-	<Compile Include="Clases\GestionProdcutos.cs" />
     <Compile Include="Clases\Producto.cs" />
     <Compile Include="Ejercicio1\Ejercicio1.aspx.cs">
       <DependentUpon>Ejercicio1.aspx</DependentUpon>

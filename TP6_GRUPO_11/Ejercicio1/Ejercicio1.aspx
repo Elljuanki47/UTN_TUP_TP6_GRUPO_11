@@ -82,6 +82,13 @@
             <asp:Label ID="lblMensaje" runat="server"
                 ForeColor="Red" EnableViewState="false"></asp:Label>
 
+            <br /><br />
+
+            <asp:HyperLink ID="hlVolver" runat="server"
+                NavigateUrl="~/Inicio.aspx"
+                Text="Volver al inicio">
+            </asp:HyperLink>
+
         </div>
     </form>
 </body>

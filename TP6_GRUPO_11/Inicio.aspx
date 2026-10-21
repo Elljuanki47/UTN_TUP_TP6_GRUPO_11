@@ -4,20 +4,28 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>TP6 - Grupo 11</title>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            Grupo N°11</div>
-        <p>
-            <asp:HyperLink ID="LinkEJ1" runat="server">Ejercicio 1</asp:HyperLink>
-        </p>
-        <p>
-            &nbsp;</p>
-        <p>
-            <asp:HyperLink ID="HyperLink2" runat="server">Ejercicio 2</asp:HyperLink>
-        </p>
+            <h2>Trabajo Práctico N° 6</h2>
+            <h3>Programación 3 - Grupo 11</h3>
+
+            <p>Seleccione el ejercicio que desea realizar:</p>
+
+            <asp:HyperLink ID="hlEjercicio1" runat="server"
+                NavigateUrl="~/Ejercicio1/Ejercicio1.aspx"
+                Text="Ejercicio 1 - Administración de productos">
+            </asp:HyperLink>
+
+            <br /><br />
+
+            <asp:HyperLink ID="hlEjercicio2" runat="server"
+                NavigateUrl="~/Ejercicio2/Inicio.aspx"
+                Text="Ejercicio 2 - Selección de productos">
+            </asp:HyperLink>
+        </div>
     </form>
 </body>
 </html>

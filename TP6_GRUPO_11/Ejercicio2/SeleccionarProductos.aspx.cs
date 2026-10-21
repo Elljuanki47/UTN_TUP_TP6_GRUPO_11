@@ -21,7 +21,7 @@ namespace TP6_GRUPO_11.Ejercicio2
 
         private void CargarGridView()
         {
-            GestionProdcutos gestion = new GestionProdcutos();
+            GestionProductos gestion = new GestionProductos();
             gvProductos.DataSource = gestion.TodosLosDatos();
             gvProductos.DataBind();
         }
