@@ -13,5 +13,24 @@ namespace TP6_GRUPO_11.Ejercicio2
         {
 
         }
+
+        protected void lbEliminarSeleccionados_Click(object sender, EventArgs e)
+        {
+            System.Data.DataTable seleccionados =
+                Session["ElementosSeleccionados"] as System.Data.DataTable;
+
+            if (seleccionados == null || seleccionados.Rows.Count == 0)
+            {
+                lblMensaje.ForeColor = System.Drawing.Color.Red;
+                lblMensaje.Text = "No hay productos seleccionados para eliminar.";
+                return;
+            }
+
+            Session.Remove("ElementosSeleccionados");
+
+            lblMensaje.ForeColor = System.Drawing.Color.Green;
+            lblMensaje.Text = "Se eliminaron los productos de la selección.";
+        }
+
     }
 }

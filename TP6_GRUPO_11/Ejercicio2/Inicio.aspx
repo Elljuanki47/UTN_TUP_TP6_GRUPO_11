@@ -20,9 +20,13 @@
         }
     </style>
 </head>
+
 <body>
+
     <form id="form1" runat="server">
+
         <h2>Ejercicio 2 - Seleccion de productos</h2>
+
         <table class="auto-style1">
             <tr>
                 <td class="auto-style5"></td>
@@ -36,7 +40,7 @@
                     <asp:HyperLink ID="hlSeleccionarProductos" runat="server" NavigateUrl="~/Ejercicio2/SeleccionarProductos.aspx">Seleccionar Productos</asp:HyperLink>
                 </td>
                 <td class="auto-style3">
-                    <asp:LinkButton ID="lbEliminarSeleccionados" runat="server">Eliminar productos seleccionados</asp:LinkButton>
+                    <asp:LinkButton ID="lbEliminarSeleccionados" runat="server" OnClick="lbEliminarSeleccionados_Click">Eliminar productos seleccionados</asp:LinkButton>
                 </td>
                 <td class="auto-style4">
                     <asp:HyperLink ID="hlMostrarProductos" runat="server" NavigateUrl="~/Ejercicio2/MostrarProductos.aspx">Mostrar productos </asp:HyperLink>
@@ -65,9 +69,16 @@
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
+
         </table>
+
+        <asp:Label ID="lblMensaje" runat="server" EnableViewState="false"></asp:Label>
+
         <div>
         </div>
+
     </form>
+
 </body>
+
 </html>
